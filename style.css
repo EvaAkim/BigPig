@@ -1,0 +1,871 @@
+/*--обнуление--*/
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------стили шрифтов--------------*/
+.mont-nav{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.mont-h1{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.mont-p-info{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-shadow: rgb(0, 0, 0) 1px 0 30px;
+}
+
+.mont-footer{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.mont-menu-title{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------общее--------------*/
+
+.container{
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.header{
+    height: 240px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main{
+    padding-top: 340px;
+    padding-left: 100px;
+    height: 600px;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    background-color: #372627;
+    display: flex;
+    align-items: center;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------общие брейкпоинты--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------ГЛАВНАЯ--------------*/
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu-link{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+}
+
+.header-menu-link__element{
+    width: 247px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #FFFFFF;
+    transition: 0.1s;
+}
+
+.header-menu-link__element:hover{
+    border-bottom: 1px solid #372627;
+}
+
+#element{
+    display: none;
+}
+
+#element2{
+    display: none;
+}
+
+.main-button{
+    width: 483px;
+    height: 93px;
+    border: 2px solid #FFFFFF;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.main-button:hover{
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.main-info__h1{
+    margin-bottom: 50px;
+}
+
+.main-info__p{
+    margin-bottom: 200px;
+}
+
+.footer-info{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-burger{
+    display: none;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты ГЛАВНАЯ--------------*/
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .header-menu-link__element{
+        width: 180px;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #FFFFFF;
+        transition: 0.1s;
+    }
+
+    .mont-nav{
+        font-size: 28px;
+    }
+
+    .main{
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+    .mont-h1{
+        font-size: 48px;
+    }
+
+    .mont-p-info{
+        font-size: 24px;
+    }
+    
+    .main-button{
+        width: 483px;
+        height: 93px;
+        border: 2px solid #FFFFFF;
+        background: none;
+        font-family: "Montserrat", sans-serif;
+        color: #FFFFFF;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .main-button:hover{
+        font-size: 26px;
+        color: #ffffff;
+    }
+
+    .mont-footer{
+        font-size: 13px;
+    }
+    
+    .footer-info{
+        width: 768px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 6;
+    }
+
+    .header:before{
+        z-index: 4;
+    }
+
+    .header-burger:before{
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger:after{
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger:before{
+        top: 0;
+    }
+
+    .header-burger:after{
+        bottom: 0;
+    }
+
+    .header-burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header-burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header-burger-span.active{
+        transform: scale(0);
+
+    }
+
+    .header-burger-span{
+        position: absolute;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-menu-logo{
+        z-index: 6;
+    }
+
+    .header-menu-link{
+        display: block;
+        position: fixed;
+        top: -200%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(35, 35, 35);
+        z-index: 3;
+        padding: 200px 40px 20px 40px;
+        transition: all 0.8s ease 0s;
+    }
+
+    .header-menu-link.active{
+        top: 0;
+    }
+
+    .header-menu-link__element{
+        margin: 0px 0px 20px 0px;
+    }
+
+    #element{
+        display: block;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #element2{
+        display: block;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+
+    
+    .mont-h1{
+        font-size: 40px;
+    }
+
+    .mont-p-info{
+        font-size: 20px;
+    }
+    
+    .main-button{
+        width: 307px;
+        height: 56px;
+        font-size: 16px;
+    }
+    
+    .main-button:hover{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .mont-footer{
+        font-size: 13px;
+    }
+    
+    .footer-info{
+        width: 576px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+
+
+    .footer{
+        height: 90px;
+    }
+
+    .footer-info{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mont-footer{
+        font-size: 12px;
+    }
+
+    .mont-h1{
+        font-size: 36px;
+    }
+
+    .mont-p-info{
+        font-size: 20px;
+    }
+    
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------BURGER ГЛАВНАЯ--------------*/
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header-menu-logo{
+    position: relative;
+    z-index: 3;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------МЕНЮ--------------*/
+.header-menu-logo2{
+    position: relative;
+    z-index: 3;
+}
+.header2{
+    height: 132px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: black;
+}
+
+.main2{
+    padding-top: 132px;
+    background-color: #000000;
+}
+
+.main-container1{
+    height: 881px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container__block{
+    width: 480px;
+    background: url(/img/menu1.svg);
+    cursor: pointer;
+    transition: 1s;
+}
+.main-container__block:hover{
+    opacity: 0.6;
+}
+
+.main-container__block2{
+    width: 480px;
+    background: url(/img/menu2.svg);
+    cursor: pointer;
+    transition: 1s;
+}
+.main-container__block2:hover{
+    opacity: 0.6;
+}
+
+.main-container__block3{
+    width: 480px;
+    background: url(/img/menu3.svg);
+    cursor: pointer;
+    transition: 1s;
+}
+.main-container__block3:hover{
+    opacity: 0.6;
+}
+
+.main-container__block4{
+    width: 480px;
+    background: url(/img/menu4.svg);
+    cursor: pointer;
+    transition: 1s;
+}
+.main-container__block4:hover{
+    opacity: 0.6;
+}
+
+.main-container__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 160%;
+}
+
+.footer2{
+    bottom: 0;
+    height: 70px;
+    background-color: #372627;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info2{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты МЕНЮ--------------*/
+@media (max-width: 1900px){
+    .container{
+        max-width: 1800px;
+    }
+    
+
+}
+
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+    
+    .mont-menu-title{
+        font-size: 20px;
+    }
+
+    .main-container__title{
+        margin-top: 180%;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-container__block{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9921.svg);
+    }
+    .main-container__block2{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9922.svg);
+    }
+    .main-container__block3{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9923.svg);
+    }
+    .main-container__block4{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9924.svg);
+    }
+
+}
+
+@media (max-width: 992){
+    .container{
+        max-width: 768px;
+    }
+
+    .footer-info2{
+        max-width: 768px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-container__block{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9921.svg);
+    }
+    .main-container__block2{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9922.svg);
+    }
+    .main-container__block3{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9923.svg);
+    }
+    .main-container__block4{
+        width: 100%;
+        height: 282px;
+        background: url(/img/menu9924.svg);
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    
+    .footer-info2{
+        width: 576px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-container__block{
+        width: 100%;
+        height: 297px;
+        background: url(/img/menu7681.svg);
+    }
+    .main-container__block2{
+        width: 100%;
+        height: 297px;
+        background: url(/img/menu7682.svg);
+    }
+    .main-container__block3{
+        width: 100%;
+        height: 297px;
+        background: url(/img/menu7683.svg);
+    }
+    .main-container__block4{
+        width: 100%;
+        height: 297px;
+        background: url(/img/menu7684.svg);
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+
+    .footer-info2{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container__block{
+        width: 100%;
+        height: 190px;
+        background: url(/img/menu5761.svg);
+    }
+    .main-container__block2{
+        width: 100%;
+        height: 190px;
+        background: url(/img/menu5762.svg);
+    }
+    .main-container__block3{
+        width: 100%;
+        height: 190px;
+        background: url(/img/menu5763.svg);
+    }
+    .main-container__block4{
+        width: 100%;
+        height: 190px;
+        background: url(/img/menu5764.svg);
+    }
+}
+
+/*-------------------------------------------*/
+
+
+
+/*--------------КЛАССИЧЕСКАЯ КУХНЯ--------------*/
+.main-container{
+    max-width: 2000px;
+    margin: auto;
+    height: 100%;
+}
+
+.menu-container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu-container-pctrs{
+    width: 740px;
+    height: 1393px;
+    background-color: #FFFFFF;
+    background: url(/img/menuclassic1.svg);
+}
+
+.menu-container-info{
+    background-color: #FFFFFF;
+    width: 1180px;
+    height: 1393px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container-info__slide{
+    margin: 20px 0px 29px 0px;
+}
+
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты КЛАССИЧЕСКАЯ КУХНЯ--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------BIG PIG GRILL & BBQ--------------*/
+.menu-container-pctrs2{
+    width: 740px;
+    height: 1393px;
+    background-color: #FFFFFF;
+    background: url(/img/menugrill.svg);
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты BIG PIG GRILL & BBQ--------------*/
+
+/*-------------------------------------------*/
+
+
+
+
+/*--------------РЕКА  МОРЕ  ОКЕАН--------------*/
+.menu-container-pctrs3{
+    width: 740px;
+    height: 1393px;
+    background-color: #FFFFFF;
+    background: url(/img/menuocean.svg);
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты РЕКА  МОРЕ  ОКЕАН--------------*/
+
+/*-------------------------------------------*/
+
+
+
+
+
+/*--------------МЕНЮ--------------*/
+
+.menu-container-pctrs4{
+    width: 740px;
+    height: 1393px;
+    background-color: #FFFFFF;
+    background: url(/img/menuall.svg);
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты МЕНЮ--------------*/
+
+/*-------------------------------------------*/
