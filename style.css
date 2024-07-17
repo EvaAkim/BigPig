@@ -71,6 +71,17 @@ a{
     color: #000000;
     font-size: 22px;
 }
+.mon-contact{
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mon-contact2{
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 30px;
+}
 /*-------------------------------------------*/
 
 
@@ -1145,7 +1156,6 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 20px 0px 20px;
 }
 
 .restaurant-news__block1-title-data{
@@ -1153,12 +1163,12 @@ a{
 }
 .restaurant-news__block1-title-title{
     margin-bottom: 20px;
+    text-align: center;
 }
-.restaurant-news__block1-title-line1{
-    
-}
+
 .restaurant-news__block1-title-info{
     margin-top: 20px;
+    text-align: center;
 }
 
 .line11{
@@ -1191,9 +1201,17 @@ a{
     .container{
         max-width: 992px;
     }
-
-    .menu-container-pctrs4{
-        height: 900px;
+    
+    .noto-restaurant{
+        font-size: 30px;
+    }
+    
+    .noto-restaurant-data{
+        font-size: 24px;
+    }
+    
+    .moto-restaurant{
+        font-size: 22px;
     }
     
 }
@@ -1203,6 +1221,161 @@ a{
         max-width: 768px;
     }
 
+    .noto-restaurant{
+        font-size: 24px;
+    }
+    
+    .noto-restaurant-data{
+        font-size: 20px;
+    }
+    
+    .moto-restaurant{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    .restaurant-img{
+        height: 267px;
+        background-image: url(/img/restaurant-img2.svg);
+    }
+    .restaurant-news__block{
+        height: 500px;
+    }
+    .restaurant-news__block1-img{
+        width: 50%;
+        height: 500px;
+        background-image: url(/img/restaurant1.svg);
+    }
+    .restaurant-news__block1-title{
+        width: 50%;
+        height: 500px;
+    }
+    .noto-restaurant{
+        font-size: 20px;
+    }
+    
+    .noto-restaurant-data{
+        font-size: 16px;
+    }
+    
+    .moto-restaurant{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------КОНТАКТЫ--------------*/
+.contacts-container{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.contacts-container-info{
+    margin: 0 auto;
+    width: 700px;
+    height: 764px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.contacts-container-info__title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contacts-container-info__line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contacts-container-info__adress{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contacts-container-info__telephone{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contacts-container-info__time{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacts-container-map{
+    height: 792px;
+    background-color: antiquewhite;
+}
+
+.line2{
+    width: 299px;
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты КОНТАКТЫ--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+    
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+    .mon-contact{
+        font-size: 20px;
+    }
+    .mon-contact2{
+        font-size: 20px;
+    }
+
+    .contacts-container-info{
+        width: 600px;
+    }
 }
 
 @media (max-width: 768px){
@@ -1210,12 +1383,18 @@ a{
         max-width: 576px;
     }
 
+    .contacts-container-info{
+        width: 500px;
+    }
 }
 
 @media (max-width: 576px){
     .container{
         max-width: 360px;
     }
+
+    .contacts-container-info{
+        width: 400px;
+    }
 }
 /*-------------------------------------------*/
-
