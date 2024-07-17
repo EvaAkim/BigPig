@@ -42,7 +42,34 @@ a{
 .mont-menu-title{
     font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mont-menu{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.noto-restaurant{
+    font-family: "Noto Serif", serif;
+    color: #000000;
     font-size: 30px;
+}
+
+.noto-restaurant-data{
+    font-family: "Noto Serif", serif;
+    color: #000000;
+    font-size: 31px;
+}
+
+.moto-restaurant{
+    font-family: "Noto Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 22px;
 }
 /*-------------------------------------------*/
 
@@ -503,49 +530,57 @@ a{
 
 .main-container__block{
     width: 480px;
+    padding-top: 660px;
     background: url(/img/menu1.svg);
     cursor: pointer;
     transition: 1s;
-}
-.main-container__block:hover{
-    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .main-container__block2{
     width: 480px;
+    padding-top: 660px;
     background: url(/img/menu2.svg);
     cursor: pointer;
     transition: 1s;
-}
-.main-container__block2:hover{
-    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .main-container__block3{
     width: 480px;
+    padding-top: 660px;
     background: url(/img/menu3.svg);
     cursor: pointer;
     transition: 1s;
-}
-.main-container__block3:hover{
-    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .main-container__block4{
     width: 480px;
+    padding-top: 660px;
     background: url(/img/menu4.svg);
     cursor: pointer;
     transition: 1s;
-}
-.main-container__block4:hover{
-    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .main-container__title{
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 160%;
+}
+
+.mont-menu:hover{
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .footer2{
@@ -588,13 +623,6 @@ a{
         max-width: 1200px;
     }
     
-    .mont-menu-title{
-        font-size: 20px;
-    }
-
-    .main-container__title{
-        margin-top: 180%;
-    }
 }
 
 @media (max-width: 1200px){
@@ -602,30 +630,34 @@ a{
         max-width: 992px;
     }
 
-    .main-container{
-        height: 100%;
+    .main-container1{
         display: flex;
         flex-direction: column;
+        height: 1128px;
     }
     
     .main-container__block{
         width: 100%;
         height: 282px;
+        padding-top: 40px;
         background: url(/img/menu9921.svg);
     }
     .main-container__block2{
         width: 100%;
         height: 282px;
-        background: url(/img/menu9922.svg);
+        padding-top: 40px;
+        background: url(/img/menu9222.svg);
     }
     .main-container__block3{
         width: 100%;
         height: 282px;
-        background: url(/img/menu9923.svg);
+        padding-top: 40px;
+        background: url(/img/menu9223.svg);
     }
     .main-container__block4{
         width: 100%;
         height: 282px;
+        padding-top: 40px;
         background: url(/img/menu9924.svg);
     }
 
@@ -643,26 +675,6 @@ a{
         justify-content: space-between;
     }
 
-    .main-container__block{
-        width: 100%;
-        height: 282px;
-        background: url(/img/menu9921.svg);
-    }
-    .main-container__block2{
-        width: 100%;
-        height: 282px;
-        background: url(/img/menu9922.svg);
-    }
-    .main-container__block3{
-        width: 100%;
-        height: 282px;
-        background: url(/img/menu9923.svg);
-    }
-    .main-container__block4{
-        width: 100%;
-        height: 282px;
-        background: url(/img/menu9924.svg);
-    }
 }
 
 @media (max-width: 768px){
@@ -677,26 +689,6 @@ a{
         justify-content: space-between;
     }
 
-    .main-container__block{
-        width: 100%;
-        height: 297px;
-        background: url(/img/menu7681.svg);
-    }
-    .main-container__block2{
-        width: 100%;
-        height: 297px;
-        background: url(/img/menu7682.svg);
-    }
-    .main-container__block3{
-        width: 100%;
-        height: 297px;
-        background: url(/img/menu7683.svg);
-    }
-    .main-container__block4{
-        width: 100%;
-        height: 297px;
-        background: url(/img/menu7684.svg);
-    }
 }
 
 @media (max-width: 576px){
@@ -710,26 +702,32 @@ a{
         flex-direction: column;
     }
 
+    
     .main-container__block{
         width: 100%;
-        height: 190px;
+        height: 282px;
+        padding-top: 40px;
         background: url(/img/menu5761.svg);
     }
     .main-container__block2{
         width: 100%;
-        height: 190px;
+        height: 282px;
+        padding-top: 40px;
         background: url(/img/menu5762.svg);
     }
     .main-container__block3{
         width: 100%;
-        height: 190px;
+        height: 282px;
+        padding-top: 40px;
         background: url(/img/menu5763.svg);
     }
     .main-container__block4{
         width: 100%;
-        height: 190px;
+        height: 282px;
+        padding-top: 40px;
         background: url(/img/menu5764.svg);
     }
+
 }
 
 /*-------------------------------------------*/
@@ -754,7 +752,16 @@ a{
     width: 740px;
     height: 1393px;
     background-color: #FFFFFF;
-    background: url(/img/menuclassic1.svg);
+    background: url(/img/menuclassic.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.menu-container-pctrs__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
 }
 
 .menu-container-info{
@@ -765,10 +772,14 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .menu-container-info__slide{
-    margin: 20px 0px 29px 0px;
+    margin: 20px 0px 20px 0px;
+    width: 900px;
+    height: 1000px;
+    background-image: url(/img/menu-slide.svg);
 }
 
 /*-------------------------------------------*/
@@ -787,6 +798,22 @@ a{
     .container{
         max-width: 1200px;
     }
+
+    .mont-menu-title{
+        font-size: 24px;
+    }
+
+    .line{
+        width: 700px;
+    }
+
+    .menu-container-info__slide{
+        width: 700px;
+        height: 800px;
+        background-image: url(/img/menu-slide2.svg);
+    }
+    
+
     
 }
 
@@ -794,17 +821,65 @@ a{
     .container{
         max-width: 992px;
     }
+
+    
+    .line{
+        width: 600px;
+    }
+
+    .menu-container-info__slide{
+        width: 500px;
+        height: 600px;
+        background-image: url(/img/menu-slide3.svg);
+    }
+
+    .menu-container-pctrs{
+        height: 900px;
+    }
+
+    .menu-container-info{
+        height: 900px;
+        
+    }
+    
 }
 
 @media (max-width: 992px){
     .container{
         max-width: 768px;
     }
+
+    
+    .line{
+        width: 500px;
+    }
+
+
 }
 
 @media (max-width: 768px){
     .container{
         max-width: 576px;
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-container-pctrs{
+        height: 200px;
+    }
+
+    .menu-container-info{
+        height: 700px;
+        width: 100%;
+    }
+
+    .menu-container-info__slide{
+        width: 500px;
+        height: 600px;
+        background-image: url(/img/menu-slide3.svg);
     }
 }
 
@@ -822,14 +897,67 @@ a{
     width: 740px;
     height: 1393px;
     background-color: #FFFFFF;
-    background: url(/img/menugrill.svg);
+    background: url(/img/menubbg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 /*-------------------------------------------*/
 
 
 
 /*--------------брейкпоинты BIG PIG GRILL & BBQ--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
 
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .mont-menu-title{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .menu-container-pctrs2{
+        height: 900px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    .menu-container-pctrs2{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
 /*-------------------------------------------*/
 
 
@@ -841,13 +969,66 @@ a{
     height: 1393px;
     background-color: #FFFFFF;
     background: url(/img/menuocean.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 /*-------------------------------------------*/
 
 
 
 /*--------------брейкпоинты РЕКА  МОРЕ  ОКЕАН--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
 
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .mont-menu-title{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .menu-container-pctrs3{
+        height: 900px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    .menu-container-pctrs3{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
 /*-------------------------------------------*/
 
 
@@ -861,11 +1042,176 @@ a{
     height: 1393px;
     background-color: #FFFFFF;
     background: url(/img/menuall.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 /*-------------------------------------------*/
 
 
 
 /*--------------брейкпоинты МЕНЮ--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .mont-menu-title{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .menu-container-pctrs4{
+        height: 900px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    .menu-container-pctrs4{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
+/*-------------------------------------------*/
+
+
+
+/*--------------РЕСТОРАН--------------*/
+.restaurant-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-img{
+    width: 100%;
+    height: 415px;
+    background-image: url(/img/restaurant-img.svg);
+    margin-bottom: 80px;
+}
+
+.restaurant-news{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-news__block{
+    height: 1235px;
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurant-news__block1-img{
+    width: 50%;
+    height: 1235px;
+    background-image: url(/img/restaurant1.svg);
+}
+.restaurant-news__block1-title{
+    width: 50%;
+    height: 1235px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+}
+
+.restaurant-news__block1-title-data{
+    margin-bottom: 20px;
+}
+.restaurant-news__block1-title-title{
+    margin-bottom: 20px;
+}
+.restaurant-news__block1-title-line1{
+    
+}
+.restaurant-news__block1-title-info{
+    margin-top: 20px;
+}
 
 /*-------------------------------------------*/
+
+
+
+/*--------------брейкпоинты РЕСТОРАН--------------*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .line11{
+        width: 70px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .menu-container-pctrs4{
+        height: 900px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
+/*-------------------------------------------*/
+
